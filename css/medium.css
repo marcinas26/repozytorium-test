@@ -1,0 +1,24 @@
+/* 768px */
+
+.all_places_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single_place {
+    width: 47%;
+}
+
+.single_place img {
+    height: 228px;
+    object-fit: cover;
+}
+
+.contacts_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
