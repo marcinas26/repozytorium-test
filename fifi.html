@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Fifi Bank</title>
+    <link rel="stylesheet" href="fifi.css">
+    <link rel="shortcut icon" href="img/bank-988164.svg" type="image/x-icon">
+    <script src="timer.js"></script>
+    <link rel="stylesheet" href="../image/css/fontello.css" type="text/css"/>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    
+    <script>
+        jQuery(function($)
+        {
+            $.scrollto(0);
+            $('#link').click(function() { $.scrollto($('#plinki'), 500); });
+            $('.scrollup').click(function() { $.scrollto($('body'), 1000); });
+        }
+        );
+        $(window).scroll(function()
+        {
+            if($(this).scrollTop()>100) $('.scrollup').fadeIn();
+            else $('.scrollup').fadeOut();
+        }
+        );
+    </script>
+
+</head>
+<body onload="odliczanie();">
+    <container>
+        <a href="#" class="botton"></a>
+            <div>
+            <div id="logo">
+                <p>logo fifi bank</p>
+                <img src="img/bank-988164.svg" alt="logo">
+            </div>
+            
+            <div id="tytul">
+            <h1>Witaj na stronie FIFI Banku :) </h1>
+            </div>
+
+            <div id="aside">
+            <h1>STRAŻNIK CZASU</h1>
+            <div id="zegar">12:00</div>
+            </div>
+
+            <div class="baner">
+            <p><MARQUEE SCROLLAMOUNT=25 DIRECTION=left >notowania giełdowe $, akcje</MARQUEE></p>
+            </div>
+            </div>
+
+    <div id="zarzad">
+            <h2>Podstrony Zarządu <br>
+                Fifi Banku</h2>
+        <ul class="menu">
+            <a href="fff">O nas</a><br>
+            <a href="fff">Historia</a><br>
+            <a href="fff">Zarząd</a></br>
+            <a href="fff">szablon pieniądza</a></br>
+            <a id="link" href="#plinki">przydatne linki</a>
+        </ul>
+        <div class="menu1">test</div>
+        <div>test</div>
+    </div>
+        <!-- Slider start -->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+            
+                <div class="slide first">
+                    <a target="_blank" href="https://www.wp.pl/.pl">
+                    <img src="img/ceo.jpg" alt=""></a>
+                </div>
+            <div class="slide">
+                <a target="_blank" href="http://google.pl">
+                <img src="img/biuro.jpg" alt="biuro"></a>
+            </div>
+            <div class="slide">
+                <a target="_blank" href="https://www.ford.pl/.pl">
+                <img src="img/mustang.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+                <a target="_blank" href="https://jetpartner.pl/.pl">
+                <img src="img/samolot.jpg" alt=""></a>
+            </div>
+    
+            <div class="navigation-auto">
+                <div class="Auto-btn1"></div>
+                <div class="Auto-btn2"></div>
+                <div class="Auto-btn3"></div>
+                <div class="Auto-btn4"></div>
+            </div>
+                </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            </div>
+        
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                counter++;
+            if(counter >4){
+                counter = 1;
+            }
+            }, 5000);
+        
+            </script>
+        
+        
+                <!-- slider end  -->
+    
+    <div id="ostatnie">
+            <p>Ostatnie wiadomości</p><br> 
+            
+            <ul>ostatnie</ul>
+            <ul>przedostatnie</ul>
+            <ul>przedprzedostatnie</ul>
+            <ul>stare</ul>
+            
+            <a href="#">a może z linkiem </a>
+            
+            
+        </div>
+    
+    
+    <!-- stary baner      -->
+    <!-- <div id="baner1">
+        <p>WIADOMOŚCI reklamowe przewijane <br></p>
+
+        <img src="img/gold-1013618_640.jpg" alt="złoto">
+        <img src="img/money-2724241_640.jpg" alt="oszczednosci">
+        <img src="img/money-1428594_1920.jpg" alt="dolary">
+    </div> -->
+
+
+        <div id="wiadomosci">
+            <p>WIADOMOŚCI <br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequatur recusandae quidem ipsam nemo, delectus sit minus aliquam provident, eum iure consequuntur porro temporibus. Iusto sunt molestias id eos atque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus illo doloribus fugiat aut ipsa hic saepe dicta, maxime consequuntur magnam laboriosam nobis fugit odit minima inventore incidunt. Ex, modi numquam.
+            Ratione et quidem itaque dolor delectus distinctio repellat ad eligendi temporibus optio omnis quae illo alias magnam nisi quibusdam rerum reprehenderit veritatis beatae sed, vero recusandae amet deserunt! Magnam, omnis? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis, eius quod eveniet ipsa aliquam error obcaecati iure cupiditate pariatur laborum non doloremque? Dolore autem cum modi numquam sequi voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto similique corporis enim voluptas accusantium necessitatibus voluptatum? Ab animi eius sequi, id beatae alias earum quidem sed natus vero. Quaerat.
+            Iste odio sint eum? Consequuntur, illo laudantium! Modi, blanditiis. Maxime quia incidunt dignissimos, maiores praesentium delectus odit saepe architecto, at velit nihil! Inventore iure, exercitationem accusantium autem at earum impedit.
+            Obcaecati et repudiandae illo minus voluptas ut, ratione magni autem impedit tenetur magnam dolores doloremque quidem, dicta inventore ipsa in veniam sapiente? Similique dolorem, explicabo ullam harum tempore fugiat odio.
+            Voluptates, molestiae. Sed ullam reiciendis consectetur libero nisi placeat quasi dolore maxime? Facilis, cumque accusantium? Saepe aut, veritatis, voluptatum sequi repudiandae obcaecati voluptas vel corporis, porro consequatur velit quisquam aliquam?
+            Harum, tempore pariatur. Eaque at reiciendis minima repudiandae possimus dolores sit libero reprehenderit quisquam quis unde similique, aperiam pariatur beatae numquam nam assumenda, dignissimos excepturi nihil dicta! Ipsam, quos cum?</p>
+        </div>
+        
+
+    </container>
+
+    <footer>
+        <h1 id="plinki" przydatne liki></h1>
+        <h2>Dziekujemy za odwiedzenie naszej strony :)</h2>
+        <a href="mailto:m.zdunkiewicz@wp.pl">Kliknij napiszesz do mnie Emaila</a>
+        
+        
+        <div id="link">
+            <div class="YT">
+                <a href="http://youtube.com" target="_blank" class="sociallink">
+                <i class="icon-youtube"></i></a>
+            </div>
+            <div class="fb">
+                <a href="http://facebok.com" target="_blank" class="sociallink">
+                <i class="icon-facebook-rect"></i></a>
+            </div>
+            <div class="gplus">
+                <a href="http://google.pl" target="_blank" class="sociallink">
+                <i class="icon-googleplus-rect"></i></a>
+            </div>
+            <div class="tw">
+                <a href="http://twiter.com" target="_blank" class="sociallink">
+                <i class="icon-twitter-bird"></i></a>
+            </div>
+            
+            </div>
+
+            <div style="clear: both;"></div>
+            
+            <!-- <button>testowy❤</button> -->
+            
+            <p>2022 wszelkie prawa zastrzeżone</p>
+
+    </footer>
+</body>
+</html>
